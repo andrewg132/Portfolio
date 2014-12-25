@@ -1,0 +1,34 @@
+<br>
+<div class="projectPageHeader">
+  <h1>Projects</h1>
+  <p>Here is all my projects that I am working on or have completed!</p>
+</div>
+<br>
+<div class="projectMain">
+  <% @projects.each_slice(2) do |slice| %>
+      <% slice.each do |project| %>
+          <div class="projectGrid">
+            <div class="projectHeader">
+              <h2><%= project.title %></h2>
+            </div>
+            <div class="projectImage">
+              <%= image_tag project.photo.url(:medium) %>
+            </div>
+            <div class="projectShortDescription">
+                <p><%= project.shortDescription %></p>
+            </div>
+            <div class="projectFooter">
+              <%= link_to "Show ", project_path(project) %>
+              <%= link_to "Edit ", edit_project_path(project) %>
+              <%= link_to "Destroy ", project_path(project),
+                          method: :delete, data: { confirm: 'Are your sure?'}
+              %>
+            </div>
+          </div>
+
+      <% end %>
+<% end %>
+</div>
+
+
+

@@ -1,0 +1,26 @@
+<%= form_for @project do |f| %>
+    <%= @project.errors.full_messages.first if @project.errors.any? %>
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
+
+    <p>
+      <%= f.label :shortDescription %><br>
+      <%= f.text_area :shortDescription %>
+    </p>
+
+    <p>
+      <%= f.label :longDescription %><br>
+      <%= f.text_area :longDescription %>
+    </p>
+
+    <p>
+      <%= f.label :photo %><br>
+      <%= f.file_field :photo %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>

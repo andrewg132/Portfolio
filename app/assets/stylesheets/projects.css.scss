@@ -1,0 +1,107 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.projectGrid{
+  position: relative;
+  border: 4px solid #999999;
+  float: left;
+  width: 31.75%;
+  height: 520px;
+  display: table-cell;
+  border-radius: 30px;
+  margin: 0.5% 0.4% 0.5% 0.4%
+}
+.projectMain{
+  position: static;
+  min-height: 100%;
+  border: 4px solid #B00100;
+  margin: 2px 2px 2px 2px;
+  width: calc(100% - 350px);
+  display: table;
+  background-color: #575757;
+  border-radius: 30px;
+  border-bottom: none;
+  float: left;
+}
+.projectImage{
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.projectFooter{
+  width: 100%;
+  height: 20px;
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.projectHeader{
+  text-align: center;
+  margin: 4px 4px 4px 4px;
+  padding: 2px 2px;
+  border: 4px solid #730E15;
+  font-family: "Lucida Grande, Arial";
+  font-weight: bold;
+  width: auto;
+  height: 60px;
+  color: #000000;
+  display: block;
+  background: rgb(188,188,188); /* Old browsers */
+  border-radius: 30px;
+}
+.projectPageHeader{
+  text-align: center;
+  margin: 0 auto;
+  border: 4px solid #730E15;
+  font-family: "Lucida Grande, Arial";
+  font-weight: bold;
+  width: 95%;
+  height: auto;
+  color: #000000;
+  display: block;
+  background: rgb(188,188,188); /* Old browsers */
+  border-radius: 30px;
+}
+.projectShortDescription{
+  height: 100px;
+  margin: 0 auto;
+  padding: 6px;
+  width: 90%;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.projectShowImage{
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+.projectShowMain{
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid #B00100;
+  background-color: #575757;
+  border-radius: 30px;
+  padding-top: 4px;
+}
+.projectLongDescription{
+  width: 500px;
+  height: auto;
+  border: white 2px solid;
+  margin: 0 auto;
+  padding: 4px 0 0 4px;
+  border-radius: 20px;
+}
+.projectShowFooter{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}

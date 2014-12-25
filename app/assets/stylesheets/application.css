@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.myBackground {
+    background-color: #0a0b27;
+}
+
+#topNavigation{
+    list-style-type: circle;
+    display: inline;
+    border: 4px solid #730E15;
+    margin: 0 2px;
+    padding: 10px 40px;
+    overflow: hidden;
+    width: auto;
+    font-family: "Lucida Grande, Arial";
+    font-weight: bold;
+    text-align: center;
+    background: rgb(188,188,188); /* Old browsers */
+    border-radius: 10px;
+}
+#topNavigation a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px 1px #575757;
+}
+
+.myHeader{
+    border-radius: 22px 22px 105px 22px;
+    -moz-border-radius: 22px 22px 105px 22px;
+    -webkit-border-radius: 22px 22px 105px 22px;
+    border: 9px inset #7a7a7a;
+    background-color: #2E2F30;
+}
+.rightSideBar{
+    display: list-item;
+    position: relative;
+    /*border: 4px solid #730E15;*/
+    height: auto;
+    width: 300px;
+    float: right;
+    border-radius: 22px 22px 105px 22px;
+    background-color: #575757;
+    border: 9px inset #7a7a7a;
+}
+.myProject{
+    display: block;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px;
+}

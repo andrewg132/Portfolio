@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AG3DR2</title>
+  <header class="myHeader">
+    <%= image_tag("logo2.png", :alt => "rss feed") %>
+    <p style="color: white; padding-left: 20px">Website developed with Ruby on Rails</p>
+  </header>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<br>
+<body class="myBackground">
+<!-- Tabular Menu -->
+  <%= render_navigation(:level => 1) %>
+<div class="myProject">
+
+
+  <%= yield %>
+ <!-- Side Bar
+ <div class="rightSideBar">
+    <p>Stuff</p>
+  </div> -->
+  </div>
+</body>
+
+
+</html>
+

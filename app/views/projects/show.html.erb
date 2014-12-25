@@ -1,0 +1,18 @@
+<br><br>
+<div class="projectShowMain">
+  <div class="projectPageHeader">
+    <h1><%= @project.title%></h1>
+  </div>
+  <div class="projectShowImage">
+    <%= image_tag @project.photo.url(:large) %>
+  </div>
+  <strong><p style="text-align: center">Project Description:</p></strong>
+  <div class="projectLongDescription">
+    <p><%= @project.longDescription%></p>
+  </div>
+  <div class="projectShowFooter"><br>
+    <small><%= @project.created_at %></small><br>
+    <%= link_to "Back", projects_path %>
+  </div>
+  <br>
+</div>
